@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6760fcfaa3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Nikita Sakunde (2).jpg" class ="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+
+            <div class="header-text">
+                <div class="text-1"><h1>Hey, my name is <br> Nikita Sakunde </h1></div>
+                <div class="text-2"><h3>And I am  <span class="typing"></span></h3></div>
+
+
+            </div>
+        </div>
+    </div>
+<!-- about section starts here -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Nikita Sakunde (1).jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am Nikita Sakunde. I am Web-Developer, Designer and Student and passionate about Full Stack Web-Development. currently, I am pursuing bachelor's degree in Technology(B.Tech) in Computer Science department. I like to read books, listening to podcasts , listening to audiobooks, etc.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <div class="rectangle">HTML</div>
+                            <div class="rectangle">CSS</div>
+                            <div class="rectangle">JavaScript</div>
+                            <div class="rectangle">React.js</div>
+                            <div class="rectangle">Node.js</div>
+                            <div class="rectangle">MongoDB</div>
+                            <div class="rectangle">Pug.js</div>
+                            <div class="rectangle">Java</div>
+                            <div class="rectangle">Github</div>
+                            <div class="rectangle">Excel</div>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>April 2023- May 2023</span><br>pursuing one month on Internship at Coding Saathi</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.Tech from Arvind Gavali College of Engineering , Satara</li>
+                            <li><span>2020</span><br>HSC</li>
+                            <li><span>2018</span><br>SSC</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/dance.jfif" alt="">
+                <div class="layer">
+                    <h3>Dance Website</h3>
+                    <a href="https://nikitadanceacademy.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/virtual.png" alt="">
+                <div class="layer">
+                    <h3>Virtual Updation of Project</h3>
+                    <a href="https://virtual-updation-of-project.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/temp.png" alt="">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <a href="https://best-weather-forecating-app.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/fit.png" alt="">
+                <div class="layer">
+                    <h3>Fitness Website</h3>
+                    <a href="https://exercisetime.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/emoji.png" alt="">
+                <div class="layer">
+                    <h3>Emoji Rating</h3>
+                    <a href="https://rateemoji.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- contact  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="cotact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <br>
+                <p><i class="fas fa-paper-plane"></i> sakundenikita3@gmail.com</p>
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nikita-sakunde-0b3413225/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Nikitasakunde"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/SakundeNikita"><i class="fa-brands fa-stack-overflow"></i></a>
+
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="cotact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Your Name Here" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email Here" required>
+                    <textarea name="Message" rows="6" placeholder="Enter Your Message Here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2023. Made by Nikita Sakunde</p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openMenu(params) {
+            sidemenu.style.right = "0";
+        }
+        function closeMenu(params) {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+      
+      <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyP37i-VC7i908I6cisKQU3jBeYQt12Id2oyp4AoVumDv-x7nkbbe0ngjH3JPiXALTT9Q/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML= "Message sent successfully";
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+      </script>
+
+<!-- typing animation script -->
+
+<script>
+var typed = new Typed(".typing",{
+    strings:["Student","Web-Developer" ,"Designer" ,"Front-End Developer"],
+    typeSpeed:110,
+    backSpeed:60,
+    loop:true
+
+})
+
+</script>
+</body>
+
+</html>
